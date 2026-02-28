@@ -46,7 +46,7 @@ function App() {
   const [showConfigModal, setShowConfigModal] = useState(false);
   const [showApiKey, setShowApiKey] = useState(false);
   const [apiKeyInput, setApiKeyInput] = useState(() => localStorage.getItem('极光_api_key') || '');
-  const [baseUrlInput, setBaseUrlInput] = useState(() => localStorage.getItem('极光_base_url') || 'https://www.jiguangmanying.xyz');
+  const [baseUrlInput, setBaseUrlInput] = useState(() => localStorage.getItem('极光_base_url') || 'https://api.jiguangmanying.xyz');
   const [testStatus, setTestStatus] = useState<'idle' | 'testing' | 'success' | 'error'>('idle');
   
   // Support Modal State
@@ -369,12 +369,12 @@ function App() {
                         <button onClick={() => setShowLinksModal(false)} className="bg-[#EF4444] hover:bg-[#DC2626] border-2 border-black text-white p-1 transition-colors"><X size={24} strokeWidth={3} /></button>
                    </div>
                    <div className="p-8 grid grid-cols-1 gap-6 font-sans bg-[#FFFBEB]">
-                        <a href="https://www.jiguangmanying.xyz" target="_blank" className="group flex flex-col md:flex-row items-stretch bg-white border-4 border-black p-0 hover:-translate-y-1 transition-transform relative overflow-hidden">
+                        <a href="https://api.jiguangmanying.xyz" target="_blank" className="group flex flex-col md:flex-row items-stretch bg-white border-4 border-black p-0 hover:-translate-y-1 transition-transform relative overflow-hidden">
                              <div className="w-full md:w-32 bg-black border-b-4 md:border-b-0 md:border-r-4 border-black flex items-center justify-center shrink-0 group-hover:bg-gray-900 transition-colors min-h-[120px]"><Monitor className="text-[#FACC15] w-12 h-12" strokeWidth={2.5} /></div>
                              <div className="p-5 flex-1 w-full flex flex-col justify-center">
                                  <div className="flex justify-between items-start mb-2"><h4 className="font-sans font-black text-2xl text-black leading-none">API 主站</h4><ExternalLink size={20} className="text-gray-400 group-hover:text-black transition-colors" /></div>
                                  <p className="text-gray-600 font-bold text-sm leading-relaxed mb-3">一站式模型聚合平台。用于创建API令牌(Key)，查询调用日志与额度消耗。</p>
-                                 <div><span className="inline-block bg-black text-white px-2 py-1 font-mono text-xs font-bold">www.jiguangmanying.xyz</span></div>
+                                 <div><span className="inline-block bg-black text-white px-2 py-1 font-mono text-xs font-bold">api.jiguangmanying.xyz</span></div>
                              </div>
                         </a>
                         <a href="https://p.vivaapi.cn" target="_blank" className="group flex flex-col md:flex-row items-stretch bg-white border-4 border-black p-0 hover:-translate-y-1 transition-transform relative overflow-hidden">
@@ -424,8 +424,8 @@ function App() {
                    <div className="p-8 space-y-6">
                       <p className="text-[#EF4444] font-bold text-lg leading-relaxed">API令牌分组：限时特价→default→优质gemini→sora-vip→逆向</p>
                       <div className="space-y-2">
-                          <label className="text-base font-black text-black flex items-center gap-2"><a href="https://www.jiguangmanying.xyz/console/token" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-blue-600 transition-colors">API令牌获取地址 <ExternalLink size={16} /></a></label>
-                          <input type="text" value={baseUrlInput} onChange={e => setBaseUrlInput(e.target.value)} className="w-full bg-white border-2 border-black p-3 font-mono text-lg outline-none focus:bg-[#FFFBEB] transition-colors text-gray-700" placeholder="https://www.jiguangmanying.xyz" />
+                          <label className="text-base font-black text-black flex items-center gap-2"><a href="https://api.jiguangmanying.xyz/console/token" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-blue-600 transition-colors">API令牌获取地址 <ExternalLink size={16} /></a></label>
+                          <input type="text" value={baseUrlInput} onChange={e => setBaseUrlInput(e.target.value)} className="w-full bg-white border-2 border-black p-3 font-mono text-lg outline-none focus:bg-[#FFFBEB] transition-colors text-gray-700" placeholder="https://api.jiguangmanying.xyz" />
                       </div>
                       <div className="space-y-2">
                           <label className="text-base font-black text-black">API令牌 (KEY)</label>

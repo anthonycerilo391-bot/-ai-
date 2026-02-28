@@ -183,7 +183,7 @@ const StoryboardGrid: React.FC<Props> = ({
         
         <div className="flex gap-3">
             <a 
-                href="https://www.jiguangmanying.xyz/console/task" 
+                href="https://api.jiguangmanying.xyz/console/task" 
                 target="_blank" 
                 rel="noreferrer"
                 className="flex items-center gap-2 bg-white hover:bg-gray-100 text-black px-8 py-3 border-4 border-black font-bangers text-xl hover:-translate-y-1 transition-all no-underline"

@@ -6,7 +6,7 @@ import { AI_SCREENWRITER_INSTRUCTION, SHOT_FLOW_KB, VISUAL_STYLE_KB, EDITING_ANA
 
 // Viva API Configuration - Initialize from LocalStorage
 let vivaApiKey: string | null = typeof window !== 'undefined' ? localStorage.getItem('极光_api_key') : null;
-let vivaBaseUrl: string = (typeof window !== 'undefined' ? localStorage.getItem('极光_base_url') : null) || "https://www.jiguangmanying.xyz";
+let vivaBaseUrl: string = (typeof window !== 'undefined' ? localStorage.getItem('极光_base_url') : null) || "https://api.jiguangmanying.xyz";
 
 // Legacy custom config (for Gemini direct)
 let customApiKey: string | null = typeof window !== 'undefined' ? localStorage.getItem('custom_api_key') : null;

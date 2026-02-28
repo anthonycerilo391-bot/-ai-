@@ -30,7 +30,7 @@ const LoadingOverlay: React.FC<Props> = ({ message, onCancel, showLink }) => {
               
               {showLink && (
                 <a 
-                  href="https://www.jiguangmanying.xyz/console/task" 
+                  href="https://api.jiguangmanying.xyz/console/task" 
                   target="_blank" 
                   rel="noreferrer"
                   className="mt-6 bg-[#FACC15] hover:bg-[#EAB308] text-black px-6 py-3 font-bold border-2 border-black hover:translate-y-1 transition-all flex items-center gap-2 uppercase tracking-wide"
