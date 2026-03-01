@@ -345,16 +345,15 @@ function App() {
                       <div className="flex flex-col items-center space-y-4 mt-2">
                           <div className="w-20 h-20 bg-[#3B82F6] rounded-full flex items-center justify-center border-2 border-black"><Headset className="text-white w-10 h-10" /></div>
                           <h3 className="text-xl font-bold text-gray-500 tracking-wider font-sans uppercase">WECHAT SUPPORT</h3>
-                          <div className="w-full flex border-2 border-black cursor-pointer hover:translate-y-1 transition-transform bg-white" onClick={() => { navigator.clipboard.writeText("VIVA-API"); alert("WeChat ID copied: VIVA-API"); }} title="Click to copy">
+                          <div className="w-full flex border-2 border-black cursor-pointer hover:translate-y-1 transition-transform bg-white" onClick={() => { navigator.clipboard.writeText("piananyiyu789"); alert("WeChat ID copied: piananyiyu789"); }} title="Click to copy">
                               <div className="bg-[#4ADE80] w-1/3 flex items-center justify-center border-r-2 border-black p-3"><span className="font-bold text-lg">微信客服</span></div>
-                              <div className="flex-1 flex items-center justify-center p-3 bg-white"><span className="font-black text-2xl tracking-widest">VIVA-API</span></div>
+                              <div className="flex-1 flex items-center justify-center p-3 bg-white"><span className="font-black text-2xl tracking-widest">piananyiyu789</span></div>
                           </div>
                       </div>
                       <div className="w-full border-t-2 border-dashed border-gray-300 my-6"></div>
                       <div className="text-center space-y-3">
                           <h4 className="font-sans font-bold text-xl flex items-center justify-center gap-2"><span className="w-3 h-3 bg-[#10B981] rounded-full border-2 border-black"></span>招募优质API代理</h4>
                           <p className="text-gray-600 font-bold text-sm">名额有限，欢迎想通过AI创业的伙伴加入。</p>
-                          <a href="https://my.feishu.cn/wiki/O6Q9wrxxci898Wkj6ndcFnlknJd" target="_blank" className="block w-full bg-[#EF4444] text-white font-black text-xl py-4 border-2 border-black hover:translate-y-1 transition-all flex items-center justify-center gap-2">查看更多详情 <ExternalLink size={20} /></a>
                       </div>
                   </div>
               </div>
